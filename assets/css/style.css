@@ -1165,7 +1165,7 @@ select {
 }
 
 .bg-overlay-primary:before {
-  background-image: linear-gradient(to bottom, #3da871, #368966);
+  background-image: linear-gradient(to top, #368966, #3da871);
 }
 
 .bg-overlay-primary-2:before {
@@ -1704,6 +1704,12 @@ h6 {
 .btn__primary-style2:hover .icon-arrow-left {
   color: #ffffff;
   background-color: #0e2b3d;
+}
+
+.btn__primary.min-h {
+  line-height: 50px;
+  height: 50px;
+  background-image: linear-gradient(4deg, #25d04e, #39a46f);
 }
 
 .btn__secondary {
@@ -5123,14 +5129,14 @@ input[type="radio"] {
 .table-cart tr td .quanlity input {
   width: 150px;
   text-align: center;
-  padding: 15px 30px;
+  /* padding: 15px 30px; */
   height: 45px;
 }
 
 .table-cart tr td .total {
   color: #1a1919;
   font-size: 34px;
-  margin-right: 8rem;
+  margin-right: 6rem;
   font-weight: 900;
   font-family: "LatoWebBlack";
 }
@@ -5139,17 +5145,23 @@ input[type="radio"] {
   cursor: pointer;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 input[type="number"] {
   position: relative;
   display: block;
   font-family: "Open Sans";
   width: 100%;
   line-height: 24px;
-  padding: 8px 15px 8px 30px;
+  padding: 8px 15px 8px 20px;
   color: #222222;
   border: 2px solid #e5e5e5;
   height: 48px;
-  border-radius: 30px;
+  border-radius: 0px;
   background-color: transparent;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;

@@ -272,7 +272,7 @@
                         </div>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn__primary btn__xl btn__block bd-r-50">Submit</button>
+                    <button type="submit" class="btn btn__primary min-h btn__block bd-r-50">Submit</button>
                     <div class="contact-result"></div>
                   </div><!-- /.col-12 -->
                 </div><!-- /.row -->
@@ -475,15 +475,15 @@
                           <td></td>
                           <td>
                             <div class="quanlity">
-                              <span class="btn-down"></span>
-                              <input type="number" name="number" value="5" min="1" max="100" placeholder="Quanlity">
-                              <span class="btn-up"></span>
+                              <span class="btn-down" field='quantity'></span>
+                              <input type="number" name="quantity" value="1" min="1" max="100" placeholder="Quantity">
+                              <span class="btn-up" field='quantity'></span>
                             </div>
                           </td>
                           <td></td>
                           <td>
-                            <div class="total">
-                              ₦15,000.00
+                            <div class="total">₦
+                              <span class="counter">000.00</span>
                             </div>
                           </td>
                           <td>
@@ -505,15 +505,17 @@
                             </div>
                           </span>
                           <div class="quanlity">
-                            <span class="btn-down"></span>
-                            <input type="number" name="number" value="5" min="1" max="100" placeholder="Quanlity">
-                            <span class="btn-up"></span>
+                            <span class="btn-down" field='quantity'></span>
+                            <input type="number" name="quantity" value="1" min="1" max="100" placeholder="Quantity">
+                            <span class="btn-up" field='quantity'></span>
                           </div>
                         </div>
                         <div class="cart_total clearfix">
                           <div class="cart-total-text">
                             <p class="text-left mb-1">Total</p>
-                            <span style="font-size: 20px;">N15,000.00</span>
+                            <div style="font-size: 20px;">₦
+                              <span class="counter">000.00</span>
+                            </div>
                           </div>
                           <a href="#" title="buy" class="btn action__btn-contact">
                             <span>Buy</span>
@@ -628,6 +630,7 @@
   <script src="assets/js/plugins.js"></script>
   <script src="assets/js/jquery.countdown.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/event-ticket.js"></script>
 </body>
 
 </html>
