@@ -162,7 +162,7 @@
     <!-- e@Agenda -->
 
     <!-- s@Speakers -->
-    <section id="speakers" class="event-speakers pt-50">
+    <!--<section id="speakers" class="event-speakers pt-50">
       <div class="container">
         <div class="row heading mb-40">
           <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
@@ -170,7 +170,7 @@
               <h3 class="heading__title">Our Speakers</h3>
             </div>
           </div>
-        </div><!-- /.row -->
+        </div>
         <div class="row">
           <div class="speaker-card col-lg-4 col-md-6 col-12 mb-50">
             <span class="avatar float-left"><img src="assets/images/team/1.jpg"></i></span>
@@ -216,7 +216,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     <!-- e@Speakers -->
 
     <!-- s@Research -->
@@ -306,12 +306,13 @@
               </a>
             </div>
           </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-6 d-flex flex-column justify-content-between">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+          <!--<div class="col-sm-12 col-md-12 col-lg-6 d-flex flex-column justify-content-between">-->
             <h3 class="heading__title mt-30">What we’ll talk about</h3>
             <p>The trade conference starts at 8am with talks from our speakers. This conference is focused on helping
               key players and agric enthusiasts to start, grow and scale their ventures.
             </p>
-            <div class="clients">
+            <!--<div class="clients">
               <p class="text__link mb-10">Our Sponsors
               </p>
               <div class="slick-carousel"
@@ -319,33 +320,33 @@
                 <div class="client">
                   <img src="assets/images/partners/1.png" alt="client">
                   <img src="assets/images/partners/1.png" alt="client">
-                </div><!-- /.client -->
+                </div>
                 <div class="client">
                   <img src="assets/images/partners/2.png" alt="client">
                   <img src="assets/images/partners/2.png" alt="client">
-                </div><!-- /.client -->
+                </div>
                 <div class="client">
                   <img src="assets/images/partners/3.png" alt="client">
                   <img src="assets/images/partners/3.png" alt="client">
-                </div><!-- /.client -->
+                </div>
                 <div class="client">
                   <img src="assets/images/partners/4.png" alt="client">
                   <img src="assets/images/partners/4.png" alt="client">
-                </div><!-- /.client -->
+                </div>
                 <div class="client">
                   <img src="assets/images/partners/5.png" alt="client">
                   <img src="assets/images/partners/5.png" alt="client">
-                </div><!-- /.client -->
+                </div>
                 <div class="client">
                   <img src="assets/images/partners/6.png" alt="client">
                   <img src="assets/images/partners/6.png" alt="client">
-                </div><!-- /.client -->
+                </div>
                 <div class="client">
                   <img src="assets/images/partners/7.png" alt="client">
                   <img src="assets/images/partners/7.png" alt="client">
-                </div><!-- /.client -->
-              </div><!-- /.carousel -->
-            </div>
+                </div>
+              </div>
+            </div>-->
           </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
       </div><!-- /.container -->
@@ -409,15 +410,26 @@
 
           <!-- Tab Nav -->
           <ul id="qcTabNav" class="mb-0 nav nav-tabs ">
-            <li class=""><a href="#tab-1" data-toggle="tab" aria-expanded=""><span>Buy A Booth</span></a></li>
-            <li class="active"><a href="#tab-2" data-toggle="tab" aria-expanded="true"><span>Buy Conference
-                  Ticket</span></a></li>
-            <li class=""><a href="#tab-3" data-toggle="tab" aria-expanded=""><span>Become A Sponsor</span></a></li>
+            <li class="active">
+              <a href="#tab-1" data-toggle="tab" aria-expanded="">
+                <span>Buy A Booth</span>
+              </a>
+            </li>
+            <!--<li class="active">
+              <a href="#tab-2" data-toggle="tab" aria-expanded="true">
+                <span>Buy Conference Ticket</span>
+              </a>
+            </li>-->
+            <li class="">
+              <a href="#tab-3" data-toggle="tab" aria-expanded="">
+                <span>Become A Sponsor</span>
+              </a>
+            </li>
           </ul>
           <div class="tab-content">
 
             <!-- s@Tab-1 -->
-            <div id="tab-1" class="qcTabPage clearfix tab-pane">
+            <div id="tab-1" class="qcTabPage clearfix tab-pane active">
 
               <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
                 <div class="heading text-center mb-20">
@@ -432,8 +444,8 @@
                   <div class="heading mb-20">
                     <h3 class="text-white">NGN 15,000</h3>
                   </div>
-                  <button class="btn action__btn-contact">Pay Now
-                  </button>
+                  <a href="https://paystack.com/buy/buy-a-booth-farmsby" target="_blank" class="btn action__btn-contact">Pay Now
+                  </a>
                 </div>
               </div>
 
@@ -441,7 +453,7 @@
             <!-- e@Tab-1 -->
 
             <!-- s@Tab-2 -->
-            <div id="tab-2" class="qcTabPage clearfix tab-pane active">
+            <!--<div id="tab-2" class="qcTabPage clearfix tab-pane active">
               <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
                 <div class="heading text-center mb-20">
                   <h5 class="text-white text-upper" style="text-transform: uppercase">Conference Tickets</h5>
@@ -517,16 +529,16 @@
                               <span class="counter">000.00</span>
                             </div>
                           </div>
-                          <a href="#" title="buy" class="btn action__btn-contact">
+                          <button type="button" title="buy" class="btn action__btn-contact" onclick="payWithPaystack()">
                             <span>Buy</span>
-                          </a>
+                          </button>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </div>-->
             <!-- e@Tab-2 -->
 
             <!-- s@Tab-3 -->
@@ -548,15 +560,18 @@
                           <ul class="pricing__list list-items list-items-layout2 list-unstyled">
                             <li>An all-inclusive booth in a premium position with active support from our network of
                               volunteers directing customers to your booth.</li>
+                              <hr>
                             <li>A full-page in our brochure dedicated to advertising your brand with one thousand copies
                               in print.</li>
+                              <hr>
                             <li>Your logo in the backdrop of the red carpet.</li>
+                              <hr>
                             <li>Workshop/talk opportunity at the conference.</li>
                           </ul>
                         </div>
                       </div>
                       <div class="pricing__footer">
-                        <a href="#" class="btn btn__secondary btn__block btn__icon purchase-slot">
+                        <a href="https://paystack.com/buy/premium-sponsors-farmsby" target="_blank" class="btn btn__secondary btn__block btn__icon purchase-slot">
                           <span>Purchase Slot</span>
                           <i class="icon-arrow-right"></i>
                         </a>
@@ -576,7 +591,7 @@
                         </div>
                       </div>
                       <div class="pricing__footer">
-                        <a href="#" class="btn btn__secondary btn__block btn__icon purchase-slot">
+                        <a href="https://paystack.com/buy/sponsors-farmsby" target="_blank" class="btn btn__secondary btn__block btn__icon purchase-slot">
                           <span>Purchase Slot</span>
                           <i class="icon-arrow-right"></i>
                         </a>
@@ -631,6 +646,7 @@
   <script src="assets/js/jquery.countdown.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/event-ticket.js"></script>
+  <script src="./assets/js/pay.js"></script>
 </body>
 
 </html>
