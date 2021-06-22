@@ -71,7 +71,6 @@ html {
 	scroll-behavior: smooth;
 }
 .new_back {
-	background-image: url(assets/images/sliders/hero.svg);
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -131,6 +130,11 @@ html {
 	margin-right: auto;
 	padding: 70px 0 70px 0;
 }
+@media (max-width: 1100px) {
+	.update {
+		width: 100%;
+	}
+}
 .jot {
 	background: orange;
 	width: 100%;
@@ -139,6 +143,24 @@ html {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.change {
+	margin: 0;
+	color: white;
+	font-size: 20px;
+}
+@media (max-width: 1100px) {
+	.jot {
+		padding: 20px 40px;
+	}
+}
+@media (max-width: 800px) {
+	.jot {
+		display: block;
+	}
+	.change {
+		margin-bottom: 30px;
+	}
 }
 #topics {
 	background: url("/assets/images/topic.svg");
